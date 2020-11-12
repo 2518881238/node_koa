@@ -1,0 +1,26 @@
+{
+  "name": "nodeJs_koa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --config nodemon.json",
+    "build": "webpack --config webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.17.44",
+    "nodemon": "^2.0.6",
+    "nodemon-webpack-plugin": "^4.3.2",
+    "ts-loader": "^8.0.10",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
