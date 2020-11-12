@@ -1,5 +1,6 @@
-module.exports = {
-  test() {
-  console.log('test here!')
+
+export class information {
+  static sha():void{
+    console.log('hahah')
   }
 }
