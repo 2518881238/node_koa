@@ -13,7 +13,7 @@ function querySql(sql: any):any{
     return new Promise((resolve,rejects)=>{
         con.query(sql,function (error: any, results: any) {
             if (error) throw error;
-            resolve(JSON.stringify(results));
+            resolve(results);
         });
     })
 }
@@ -21,10 +21,11 @@ function querySql(sql: any):any{
 router.post('/get', async (ctx:any)=>{
     ctx.set("Access-Control-Allow-Origin", "*");
     const sql = 'select * from buy_food';
-    let re = await querySql(sql)
-    ctx.body = JSON.parse(re);
+    let re = await querySql(sql);
+    ctx.body = re;
 });
 
 app.listen(3000,()=>{
     console.log("服务器已启动，http://localhost:3000");
 })
+
