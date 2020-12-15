@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: ['./src/main.ts'],
+  entry: ['./app.ts'],
   mode: "production",
   target: 'node',
   devtool: 'cheap-module-source-map',
