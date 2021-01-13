@@ -5,6 +5,9 @@ module.exports = {
   mode: "production",
   target: 'node',
   devtool: 'cheap-module-source-map',
+  externals: {
+    mysql: 'commonjs mysql'
+  },
   resolve: {
     extensions: ['.ts', '.js'],
     modules: ['node_modules', 'src', 'package.json'],
