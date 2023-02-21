@@ -9,6 +9,9 @@ module.exports = {
     mysql: 'commonjs mysql'
   },
   resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
     extensions: ['.ts', '.js'],
     modules: ['node_modules', 'src', 'package.json'],
   },

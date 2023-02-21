@@ -11,9 +11,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-multiparty": "^2.2.0",
+    "jsonwebtoken": "^9.0.0",
     "koa": "^2.13.0",
     "koa-body": "^4.2.0",
-    "mysql": "^2.18.1"
+    "koa-bodyparser": "^4.3.0",
+    "mysql": "^2.18.1",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@types/node": "^10.17.44",
