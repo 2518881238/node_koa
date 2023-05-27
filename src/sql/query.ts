@@ -5,7 +5,7 @@ class ExecuteSql {
     public querySql = (sql:string):Promise<any> => {
         return new Promise((resolve, reject)=>{
             con.query(sql,function (error: any, results: any) {
-                if (error) resolve({code:400,msg:error});
+                if (error) reject(error);
                 resolve(results);
             });
         })
